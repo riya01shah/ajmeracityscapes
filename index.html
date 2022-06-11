@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmeracityscapes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <section class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo-wrap">
+                    <img src="Images/logo.png" alt="logo" title="logo" class="img-logo">
+                </a>
+                <div class="nav-link-wrap" id="navLinks">
+                    <!-- <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i> -->
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Product</li>
+                        <li>Media</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <!-- <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i> -->
+            </nav>
+        </div>
+
+    </section>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <div class="slider">
+        <figure>
+            <img src="Images/slide1.jpg">
+            <img src="Images/slide1.jpg">
+            <img src="Images/slide1.jpg">
+            <img src="Images/slide1.jpg">
+            <img src="Images/slide1.jpg">
+        </figure>
+        <!-- <div class="banner-txt-wrap">
+            <h3>Infinte</h3>
+            <h1>Surface</h1>
+            <button class="prod-btn banner-btn">Explore</button>
+        </div> -->
+    </div>
+    <!-- Banner end -->
+
+    <!--  about us component -->
+    <section class="about-us">
+        <div class="container">
+            <div class="abt-body">
+                <div class="abt-content">
+                    <div class="abt-cont-body">
+                        <h4>
+                            About Us
+                        </h4>
+                        <h3>
+                            Welcome to the world of fuller living
+                        </h3>
+                        <div>
+                            <p>
+                                To us Fuller Living is about delivering abundance; about giving you life spaces that
+                                allow you to fill your
+                                lungs with fresh soothing air; the ability to stretch out your legs and relax; life
+                                spaces to bond deeply with
+                                your loved ones; life spaces that allow your aspirations to soar untrammelled; life
+                                spaces that make for a
+                                grand lifestyle; spaces that make for moments that make memories; spaces that allow
+                                smiles to blossom and
+                                shine. Fuller Living is about rich, enriching life spaces, nurturing supremely happy
+                                moments.
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="abt-content">
+                    <div class="abt-img-wrp">
+                        <div class="abt-img-cont">
+                            <img src="Images/commercial.jpg">
+                            <img src="Images/residential.jpg">
+                        </div>
+                        <div class="abt-img-cont">
+                            <img src="Images/15.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--about us component -->
+
+    <!-- Contact Us Component start -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-header">
+                <h4>
+                    Contact Us
+                </h4>
+                <h3>
+                    Leave Message
+                </h3>
+            </div>
+            <div class="contact-form-body">
+                <form>
+                    <div class="row1">
+                        <div>
+                            <label>Name: <span class="astric">*</span></label>
+                            <input type="text" autocomplete="off" placeholder="Your Name" class="inputfield" id="name"
+                                name="name">
+                            <span class="error-text" id="name-err"></span>
+                        </div>
+                        <div>
+                            <label>E-mail: <span class="astric">*</span></label>
+                            <input type="text" autocomplete="off" class="inputfield" placeholder="Your Email" id="email"
+                                name="email">
+                            <span class="error-text" id="email-err"></span>
+                        </div>
+                    </div>
+                    <div class="row1">
+                        <div>
+                            <label>Mobile: <span class="astric">*</span></label>
+                            <input type="text" autocomplete="off" maxlength="10" placeholder="Mobile Number"
+                                class="inputfield" id="mobile" name="mobile">
+                            <span class="error-text" id="mobile-err"></span>
+                        </div>
+                        <div>
+                            <label>Location:</label>
+                            <input type="text" autocomplete="off" class="inputfield" placeholder="Location"
+                                id="location" name="location">
+
+                        </div>
+                    </div>
+                    <div class="messagebox">
+                        <div>
+                            <label>Message:</label>
+                            <textarea type="textarea" class="inputfield textarea" placeholder="Your Message"
+                                id="messsage" name="messsage"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="messagebox">
+                        <div>
+                            <label> Type: <span class="astric">*</span></label>
+                            <div class="typ-wrp">
+                                <div class="typ-inp-wrp">
+                                    <input type="checkbox" id="residential" name="residential" value="RESIDENTIAL">
+                                    <label for="residential"> RESIDENTIAL</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="commercial" name="commercial" value="COMMERCIAL">
+                                    <label for="commercial">COMMERCIAL</label>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+                        <span class="error-text" id="type"></span>
+                    </div>
+                    <div class="btn-wrap">
+                        <div>
+                            <button type="Submit" id="submit" class="submit-btn" onclick="validation(event)">Send
+                                Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Us Component end -->
+
+   
+
+
+  
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            
+                <div class="foot-logo">
+                    <div class="icon-wrp">
+                        
+                        
+                        <a href="#facebook" class="icons-border"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+                        
+                        
+                       
+                    </div>
+                    <div class="icon-wrp">
+                        <a href="#linkdin" class="icons-border"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icon-wrp">
+                        <a href="#instagram" class="icons-border"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+           
+            <div class="footer-cont-wrap">
+                <div class="foot-head">
+
+                    <h5>Contact US</h5>
+                    <a href="tel:+91 8928446701" class="telno">+91 8928446701</span></a>
+                    <a href="tel:+91 7506094167" class="telno">+91 7506094167</span></a>
+                    <a href="tel:+91 7045606621" class="telno">+91 704 560 6621</span></a>							
+                    <a href="mailto:sales@ajmeracityscapes.co.in" class="telno">sales@ajmeracityscapes.co.in</span></a>
+                    <span style="margin-bottom: 10px;" class="telno address">63/67,Ajmera House, 4th Floor, Pathakwadi, L.T.Marg, Mumbai-400 002, India.</span>
+                </div>
+                <div>
+                    <h5>Link</h5>
+                    <ul class="footer-nav">
+                        <li><a href="#" class="telno"><i class="fa fa-caret-right" aria-hidden="true"></i> Profile</a></li>
+                        <li><a href="#" class="telno"><i class="fa fa-caret-right" aria-hidden="true"></i> Career</a></li>
+                        <li><a href="#" class="telno"><i class="fa fa-caret-right" aria-hidden="true"></i> Privacy Policy</a></li>
+                        <li><a href="#" class="telno"><i class="fa fa-caret-right" aria-hidden="true"></i> Disclaimer</a></li>							
+                    </ul>
+                </div>
+
+            </div>
+
+           
+
+        </div>
+    </footer>
+    <!-- Footer Start -->
+
+    <script>
+        function validation(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+
+            if (name == "") {
+                document.getElementById("name-err").innerHTML = "Please Enter Name"
+            } else {
+                var letters = /^[A-Za-z]+$/;
+                if (name.match(letters)) {
+                    document.getElementById("name-err").innerHTML = ""
+                    // return true;
+                }
+                else {
+                    document.getElementById("name-err").innerHTML = "Enter Valid name"
+
+                    // return false;
+                }
+            }
+            if (email == "") {
+                document.getElementById("email-err").innerHTML = "Please Enter Email"
+            } else {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if (email.match(mailformat)) {
+                    document.getElementById("email-err").innerHTML = ""
+                    // return true;
+                }
+                else {
+                    document.getElementById("email-err").innerHTML = "Enter Valid email ";
+
+                    // return false;
+
+                }
+            }
+            if (mobile == "") {
+                document.getElementById("mobile-err").innerHTML = "Please Enter Mobile No."
+            } else {
+                var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                if (mobile.match(phoneno)) {
+                    // return true;
+                    ocument.getElementById("mobile-err").innerHTML = " "
+                }
+                else {
+                    document.getElementById("mobile-err").innerHTML = "Enter valid Mobile No."
+                    // return false;
+                }
+
+            }
+            var chkd = document.getElementById("residential").checked || document.getElementById("commercial").checked;
+
+            if (chkd == true){
+                document.getElementById("type").innerHTML = " ";
+            } else {
+                document.getElementById("type").innerHTML = "please check a checkbox";
+       
+            }
+
+        }
+    </script>
+</body>
+
+</html>
